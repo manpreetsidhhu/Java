@@ -1,18 +1,17 @@
 
 import java.util.*;
 
-public class day1 {
+public class conditions {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Calculator:");
-        Scanner sc1 = new Scanner(System.in);
         System.out.println("Enter 1st number:");
-        int a = sc1.nextInt();
-        Scanner sc2 = new Scanner(System.in);
+        int a = sc.nextInt();
         System.out.println("Enter 2nd number:");
-        int b = sc2.nextInt();
-        Scanner sc3 = new Scanner(System.in);
+        int b = sc.nextInt();
         System.out.println("Enter the operation:");
-        String op = sc3.nextLine();
+        Scanner sc1 = new Scanner(System.in);
+        String op = sc1.nextLine();
         if (op.equals("+")) {
             System.out.println("The sum is: " + (a + b));
         } else if (op.equals("-")) {
@@ -24,5 +23,6 @@ public class day1 {
         } else {
             System.out.println("Invalid operation");
         }
+        sc.close(); sc1.close();
     }
 }
